@@ -53,3 +53,27 @@ h4 {
     font-weight: bold;
     transition: all .5s ease 0s;
 }
+
+.btn-nuevo-usuario {
+    background-color: #ed591d;
+    color: white;
+}
+
+.btn-nuevo-usuario:hover {
+    background-color: white;
+    border-color: #ed591d;
+    color: #000;
+    transition: all .5s ease 0s;
+}
+
+
+.texto-limitado {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    /* Ajusta el ancho máximo según tu diseño */
+}
+
+

@@ -385,7 +385,7 @@ body {
 }
 
 .box17:hover .icon li a {
-    top: 30%;
+    top: 10%;
     opacity: 1
 }
 
@@ -400,6 +400,7 @@ body {
 }
 
 .box17:hover .icon li:first-child a {
+
     left: -55px
 }
 
