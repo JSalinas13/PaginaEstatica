@@ -104,7 +104,10 @@ if (isset($_SESSION['id_usuario'])) {
                                 <?php
 
                                 if (isset($_SESSION['compraCarrito'])) {
-                                    if ($_SESSION['compraCarrito'] == 's') {
+                                    if (
+
+                                        $_SESSION['compraCarrito'] == 's'
+                                    ) {
                                         echo '<div class="alert alert-success" role="alert">
                                         Se compro el carrito con exito
                                         </div>';

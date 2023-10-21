@@ -148,13 +148,18 @@ class PlataformaModel
         t.id_tipo,
         CASE
             WHEN m.cantidad IS NULL THEN 'Sin stock'
-            WHEN m.cantidad = 0 THEN 'Sin stock'
+            WHEN m.cantidad <= 0 THEN 'Sin stock'
             WHEN m.cantidad > 0 THEN m.cantidad
             END AS cantidad,
         m.precio,
         m.costo,
         m2.marca,
-        t.tipo
+        t.tipo,
+        CASE
+            WHEN m.reorden IS NULL THEN 'Sin stock'
+            WHEN m.reorden <= 0 THEN 'Sin stock'
+            WHEN m.reorden > 0 THEN m.cantidad
+            END AS cantidad
  FROM modelo m
           INNER JOIN marca m2 on m.id_marca = m2.id_marca
           INNER JOIN tipo t on m.id_tipo = t.id_tipo

@@ -178,6 +178,7 @@ if (isset($_SESSION['usuario'])) {
                                                     <th>Marca</th>
                                                     <th>Tipo</th>
                                                     <th>Cantidad</th>
+                                                    <th>Re-orden</th>
                                                     <th>Precio</th>
                                                     <th>Costo</th>
                                                     <th>URL Imagen</th>

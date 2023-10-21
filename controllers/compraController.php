@@ -194,6 +194,7 @@ function getPlataformasTabla($plataformaModel)
             <td>' . $plataformas->fields[9] . '</td>
             <td>' . $plataformas->fields[10] . '</td>
             <td>' . $plataformas->fields[6] . '</td>
+            <td>' . $plataformas->fields[6] . '</td>
             <td>' . $plataformas->fields[7] . '</td>
             <td>' . $plataformas->fields[8] . '</td>
             <td>  <a href="../assets/images/plataformas/' . $plataformas->fields[0] . '/' . $plataformas->fields[4] . '">' . $plataformas->fields[4] . '</a></td>

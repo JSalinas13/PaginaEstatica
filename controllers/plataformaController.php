@@ -118,7 +118,7 @@ if (isset($_GET['opc'])) {
             break;
         case 3: //DELETE TO DB
             $resDelete = $plataformaModel->deletePlataforma($_GET['id']);
-            if ($resDelete) {
+            if ($resDelete === true) {
                 $_SESSION['deletePlataforma'] = 's';
                 header("Location: ../views/crudPlataforma.php");
             } else {
@@ -224,6 +224,7 @@ function getPlataformasTabla($plataformaModel)
             <td>' . $plataformas->fields[9] . '</td>
             <td>' . $plataformas->fields[10] . '</td>
             <td>' . $plataformas->fields[6] . '</td>
+            <td>' . $plataformas->fields[11] . '</td>
             <td>' . $plataformas->fields[7] . '</td>
             <td>' . $plataformas->fields[8] . '</td>
             <td>  <a href="../assets/images/plataformas/' . $plataformas->fields[0] . '/' . $plataformas->fields[4] . '">' . $plataformas->fields[4] . '</a></td>
